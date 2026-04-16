@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>localhost</title>
+    <style>
+     
+    </style>
+</head>
+<body >
+    <div class="container">
+
+        <header class="header">
+            <h3 >Skill Tracker</h3>
+            <h3 >aruzhan.abdyrazaqqyzy@jihc.edu.kz</h3>
+            <h3 >Log Out</h3>
+            <hr class="hr">
+        </header>
+
+        <div class="box">
+            <div class="left">
+                <h4 class="h4">Dashboard</h4>
+                <h1 class="h1">Skill Learning Tracker</h1>
+                <h4 class="h41">Track your skill,practice sessions,and consistency</h4>
+            </div>
+
+            <button class="button">Add Skill</button>
+
+        </div>
+
+
+            <div class="boxes">
+
+                <button class="knopka">
+                    <h4 class="htort">Total Skill</h4>
+                    <h3 class="huw">6</h3>
+                </button>
+
+                <button class="knopka"> 
+                    <h4 class="htort">Practice Sessions</h4>
+                    <h3 class="huw">24</h3>
+                </button>
+
+                <button class="knopka">
+                    <h4 class="htort">Total Skill</h4>
+                    <h3 class="huw">6</h3>
+                </button>
+
+                <button class="knopka">
+                    <h4 class="htort">Total Skill</h4>
+                    <h3 class="huw">6</h3>
+                </button>
+                
+            </div>
+            
+            <div class="soz">
+                <h1>Your Skills</h1>
+                <a href="#">View All</a>
+            </div>
+
+            <div class="boxeki">
+
+                <button class="basatyn">
+
+                    <div class="row">
+
+                    <div class="column">
+                        <h2>English</h2>
+                        <p>Intermadiate</p>
+                    </div>
+
+                        <h3>68%</h3>
+
+                    </div>
+
+                    <div class="progress">
+                        <div class="progress-bar"></div>
+                    </div>
+
+                </button>
+
+            </div>            
+
+
+            <div class="boxeki">
+
+                <button class="basatyn">
+
+                    <div class="row">
+
+                    <div class="column">
+                        <h2>Repact</h2>
+                        <p>Beginner</p>
+                    </div>
+
+                        <h3>42%</h3>
+
+                    </div>
+
+                    <div class="progress">
+                        <div class="progress-bar"></div>
+                    </div>
+
+                </button>
+
+            </div>            
+
+
+            <div class="boxeki">
+
+                <button class="basatyn">
+
+                    <div class="row">
+
+                    <div class="column">
+                        <h2>UI Design</h2>
+                        <p>Beginner</p>
+                    </div>
+
+                        <h3>%</h3>
+
+                    </div>
+
+                   <div class="progress">
+                        <div class="progress-bar"></div>
+                    </div>
+
+                </button>
+
+            </div>            
+    </div>
+</body>
+<script>
+    let cn = document.querySelector(".container")
+    cn.style.display = 'flex'
+    cn.style.flexDirection = 'row'
+    cn.style.flexWrap = 'wrap'
+    cn.style.alignItems = 'center'
+    cn.style.padding = '5px'
+    cn.style.justifyContent = 'center'
+    cn.style.gap = '20px'
+
+    let hd = document.querySelector(".header")
+    hd.style.display = 'flex'
+    hd.style.flexDirection = 'row'
+    hd.style.alignItems = 'center'
+    hd.style.justifyContent = 'space-between'
+    hd.style.width = '100%'
+    hd.style.padding = '5px'
+    
+
+
+    let bx = document.querySelector(".box")
+    bx.style.display = 'flex'
+    bx.style.flexDirection = 'row'
+    bx.style.alignItems = 'center'
+    bx.style.justifyContent = 'space-between'
+    bx.style.width = '100%'
+    bx.style.paddingTop = '5px'
+    bx.style.padding = '5px'
+
+    let lf = document.querySelector(".left")
+    lf.style.gap = '3px'
+    lf.style.display = 'flex'
+    lf.style.flexDirection = 'column'
+    
+    let ht = document.querySelector(".h4")
+    ht.style.color = 'gray'
+
+    let hb = document.querySelector(".h41")
+    hb.style.color = 'gray'
+    
+    let btn = document.querySelector(".button")
+    btn.style.cursor = 'pointer'
+    btn.style.padding = '10px'
+    btn.style.borderRadius = '10px'
+    btn.style.border = '1px solid black'
+     
+    let bxs = document.querySelector(".boxes")
+    bxs.style.display = 'flex'
+    bxs.style.flexDirection = 'row'
+    bxs.style.alignItems = 'center'
+    bxs.style.justifyContent = 'center'
+    bxs.style.width = '100%'
+    bxs.style.gap = '10px'
+
+
+    let kn = document.querySelectorAll(".knopka")
+    kn.forEach(knopka => {
+        knopka.style.width = '250px'
+        knopka.style.padding = '5px'
+        knopka.style.border = '1px solid black'
+        knopka.style.borderRadius = '10px'
+        knopka.style.cursor = 'pointer'
+    })
+
+    let htAll = document.querySelectorAll(".htort")
+    htAll.forEach(htort => {
+        htort.style.color = 'gray'
+        htort.style.textAlign = 'left'
+    })
+
+   let sz = document.querySelector(".soz")
+    sz.style.display = 'flex'
+    sz.style.flexDirection = 'row'
+    sz.style.alignItems = 'center'
+    sz.style.justifyContent = 'space-between'
+    sz.style.width = '100%'
+
+    let eki = document.querySelectorAll(".boxeki")
+    eki.forEach(boxeki => {
+        boxeki.style.display = 'flex'
+        boxeki.style.flexDirection = 'row'
+        boxeki.style.gap = '10px'
+        boxeki.style.width = '30%' 
+    })
+
+    let bas = document.querySelectorAll(".basatyn")
+    bas.forEach(basatyn => {
+        basatyn.style.width = '100%'   
+        basatyn.style.padding = '20px'
+        basatyn.style.borderRadius = '15px'
+
+        basatyn.style.border = '1px solid #ddd'
+    })
+    
+    let r = document.querySelectorAll(".row")
+    r.forEach(row => {
+        row.style.display = 'flex'
+        row.style.flexDirection = 'row'
+        row.style.alignItems = 'center'
+        row.style.justifyContent ='space-between'
+    })
+
+    let c = document.querySelectorAll(".column")
+    c.forEach(column => {
+        column.style.display = 'flex'
+        column.style.flexDirection = 'column'
+    })
+
+    let progresses = document.querySelectorAll(".progress")
+    progresses.forEach((progress, index) => {
+        progress.style.width = "100%"
+        progress.style.height = "8px"
+        progress.style.background = "#ddd"
+        progress.style.borderRadius = "5px"
+        progress.style.marginTop = "10px"
+
+        let bar = progress.querySelector(".progress-bar")
+        bar.style.height = "100%"
+        bar.style.background = "black"
+        bar.style.borderRadius = "5px"
+
+        let values = [68, 42, 10]
+
+        bar.style.width = values[index] + "%"
+    })
+
+    
+
+
+    
+    
+    
+
+
+
+
+  
+
+</script>
+</html>
